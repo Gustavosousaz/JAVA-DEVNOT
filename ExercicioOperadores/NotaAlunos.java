@@ -3,23 +3,29 @@ package ExercicioOperadores;
 import java.util.Scanner;
 
 public class NotaAlunos {
+    Scanner sc = new Scanner(System.in);
     public void notaFrequencia() {
-        Scanner scanner = new Scanner(System.in);
+        System.out.println("Informe a Nota 1 do aluno:");
+        int nota1 = sc.nextInt();
+        System.out.println("Informe a Nota 2 do aluno:");
+        int nota2 = sc.nextInt();
+        // double mediaAluno = (nota1 + nota2)/2;
+        double mediaAluno = nota1;
+        mediaAluno += nota2;
+        mediaAluno /= 2;
+        System.out.println("A média do Aluno é "+mediaAluno);
+        boolean mediaAprovado = mediaAluno >= 50;
+        System.out.println("O Aluno Esta Aprovado por Nota? "+mediaAprovado);
+        System.out.println("Informe a Fequência do Aluno:");
+        int frequenciaAluno = sc.nextInt();
+        boolean frequenciaAprovado = frequenciaAluno >= 75;
+        System.out.println("O Aluno Esta Aprovado por Frequencia? "+frequenciaAprovado);
+        boolean aprovacaoFinal = (mediaAprovado==true)&&(frequenciaAprovado==true);
+        System.out.println("O aluno Esta Aprovado no Curso? "+aprovacaoFinal );
 
-        System.out.println("Digite a nota 1");
-        double nota1 = scanner.nextInt();
 
-        System.out.println("Digite a nota 2");
-        double nota2 = scanner.nextInt();
 
-        System.out.println("Informe a frequencia do aluno");
-        double frequencia = scanner.nextInt();
 
-        double media = (nota1 + nota2) / 2;
 
-        System.out.println("Média maior que 50:" + (media >= 50));
-        System.out.println("Frequencia maior que 75:" + (frequencia >= 75));
-        System.out.println("Aluno aprovado:" + (frequencia > 75 && media >= 50));
     }
 }
-    

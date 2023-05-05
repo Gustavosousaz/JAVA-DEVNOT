@@ -2,13 +2,14 @@ package CalcularVelocidadeMedia;
 
 public class VelocidadeMedia {
     public static void main(String[] args) {
-        System.out.println("=== Vamos calcular a Velocidade Média ===");
-        double distanciaPercorrida = 150;
-        System.out.println("A distância foi de "+distanciaPercorrida+"KM");
-        double tempoGasto = 2;
-        System.out.println("O tempo de viagem foi de "+tempoGasto+"horas");
-        double velocidadeMedia = distanciaPercorrida/tempoGasto;
-        System.out.println("Logo, a velocidade média foi de "+velocidadeMedia+"Km/H");
-    }
+        //obter distancia percorrida pelo usuario
+        int distanciaPercorrida = 150;
+        /*obter tempo gasto pelo usuario*/
+        int tempoGasto = 2;
+        // calcular velocidade média
+        float velocidadeMedia = distanciaPercorrida/tempoGasto;
+        //Mostre a velocidade Média
+        System.out.println("A velocidade Média foi de:");
+        System.out.println(velocidadeMedia+"km/h");
 }
-
+}

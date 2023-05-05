@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://cdn-icons-png.flaticon.com/512/1322/1322053.png" alt="Gustavosousaz" width="150" />
+<img src="https://media.tenor.com/2fXbn6Xtt0UAAAAC/software-software-development.gif" alt="Gustavosousaz" width="450" />
 
 # _**POO-DEVNOT**_
 <p align="center">

@@ -41,6 +41,7 @@ public abstract class Conta {
         double saque = sc.nextDouble();
         if (saque <= saldo) {
             saldo -= saque;
+            System.out.println("Voce realizou o saque de"+saque + "Seu saldo atual é de"+saldo );
         } else {
             System.out.println("Não foi possivel realizar o saque (SALDO INSUFICIENTE!)");
         }

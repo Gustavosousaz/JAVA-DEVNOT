@@ -55,4 +55,14 @@ public abstract class Conta {
         
     }
 
+    public void emprestimo() {
+        int empréstimo = Integer.parseInt(JOptionPane.showInputDialog("Qual valor do Emprestimo?"));
+        if (empréstimo <= 1000 && empréstimo>50) {
+            saldo += empréstimo;
+            JOptionPane.showMessageDialog(null, "Emprestimo realizado ,Seu saldo atual é de" + saldo);
+        } 
+        else {
+            JOptionPane.showMessageDialog(null, "O valor minimo e maximo  de emprestimo entre R$50,00 a R$1000,00");
+        }
+    }
 }
